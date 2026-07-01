@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Error Types — Errored Coin</title>
+<meta name="description" content="Six error types — Cash, Market, Trust, Timing, Paperwork, and Panic. Naming the error correctly, before attempting recovery, is the most important step.">
+<link rel="canonical" href="https://www.errored.co.in/error-types">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Error Types — Errored Coin">
+<meta property="og:description" content="Six error types — Cash, Market, Trust, Timing, Paperwork, and Panic. Naming the error correctly, before attempting recovery, is the most important step.">
+<meta property="og:url" content="https://www.errored.co.in/error-types">
+<meta property="og:image" content="https://www.errored.co.in/og-image.png">
+<meta property="og:site_name" content="Errored Coin">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Error Types — Errored Coin">
+<meta name="twitter:description" content="Six error types — Cash, Market, Trust, Timing, Paperwork, and Panic. Naming the error correctly, before attempting recovery, is the most important step.">
+<meta name="twitter:image" content="https://www.errored.co.in/og-image.png">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Errored Coin — an initiative by Aadi Projects">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B3E;--navy2:#132247;--navy3:#0A1530;--teal:#0E7490;--teal2:#0D9B85;--green:#10C47A;--green2:#2DD4A0;--white:#FFFFFF;--mist:#C8DDE8;--slate:#6B8BA4;--mid:#4A6B80;--border:rgba(14,116,144,0.18);--borderk:rgba(255,255,255,0.08);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:16px;}
+body{font-family:'Barlow',sans-serif;background:var(--navy);color:var(--white);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+/* PAGE HERO - tight padding, no vh units */
+.page-hero{padding:56px 5vw 44px;background:var(--navy3);border-bottom:1px solid var(--borderk);position:relative;overflow:hidden;}
+.page-hero-dots{position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(rgba(16,196,122,0.1) 1px,transparent 1px);background-size:36px 36px;pointer-events:none;}
+.page-hero-inner{max-width:1100px;margin:0 auto;position:relative;}
+/* EYEBROW */
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.eyebrow-line{width:24px;height:1.5px;background:var(--green);}
+.eyebrow-text{color:var(--green);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;}
+/* PAGE TITLE - fixed px, no vw/clamp */
+.page-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:72px;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.92;color:var(--white);margin-bottom:20px;}
+.page-title .accent{background:linear-gradient(90deg,var(--teal),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:17px;font-weight:300;color:var(--mist);max-width:580px;line-height:1.7;}
+/* SECTIONS - tight padding */
+.section{padding:52px 5vw;}
+.section-inner{max-width:1100px;margin:0 auto;}
+.section-alt{background:rgba(255,255,255,0.025);}
+.section-header{margin-bottom:40px;}
+/* SECTION TITLE - fixed px */
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:52px;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.96;color:var(--white);margin-bottom:14px;}
+.section-title .accent{color:var(--green);}
+.section-body{font-size:15px;font-weight:300;color:var(--mist);max-width:580px;line-height:1.75;}
+.rule{height:1px;background:var(--border);margin:0 5vw;}
+/* BUTTONS */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--navy);background:var(--green);padding:13px 28px;border-radius:3px;transition:background 0.2s;}
+.btn-primary:hover{background:var(--green2);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--mist);border:1px solid rgba(200,221,232,0.3);padding:12px 26px;border-radius:3px;transition:border-color 0.2s,color 0.2s;}
+.btn-ghost:hover{border-color:var(--mist);color:var(--white);}
+/* CTA STRIP - tighter */
+.cta-strip{background:linear-gradient(135deg,rgba(14,116,144,0.15),rgba(16,196,122,0.08));border:1px solid var(--border);border-radius:2px;padding:44px 40px;text-align:center;}
+.cta-strip-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:44px;text-transform:uppercase;letter-spacing:-0.02em;color:var(--white);margin-bottom:12px;}
+.cta-strip-sub{font-size:15px;font-weight:300;color:var(--mist);margin-bottom:28px;max-width:440px;margin-left:auto;margin-right:auto;}
+/* FOOTER - compact */
+footer{border-top:1px solid var(--borderk);padding:36px 5vw 24px;}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:28px;}
+.footer-brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase;letter-spacing:0.02em;color:var(--white);margin-bottom:5px;}
+.footer-brand-name span{color:var(--green);}
+.fb-omega{color:var(--green);}
+.footer-brand-sub{font-size:12px;color:var(--slate);line-height:1.5;margin-bottom:12px;}
+.footer-email-label{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate);margin-bottom:4px;}
+.footer-email-link{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:17px;color:var(--green);text-decoration:none;letter-spacing:0.02em;}
+.footer-email-link:hover{color:var(--green2);}
+.footer-nav-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px 28px;}
+.footer-nav-grid a{font-size:13px;color:var(--slate);text-decoration:none;transition:color 0.2s;padding:2px 0;}
+.footer-nav-grid a:hover{color:var(--white);}
+.footer-bottom{border-top:1px solid var(--borderk);padding-top:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.footer-bottom-copy{font-size:12px;color:var(--mid);}
+.footer-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--navy);background:var(--green);padding:3px 8px;border-radius:2px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+@media(max-width:700px){.page-title{font-size:52px;}.section-title{font-size:40px;}.cta-strip{padding:32px 22px;}.footer-top{grid-template-columns:1fr;gap:24px;}}
+
+
+.footer-top{grid-template-columns:1fr 1fr 1fr;}
+.footer-social-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate);margin-bottom:8px;}
+.footer-social-grid{grid-template-columns:1fr;}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;}}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr;}}
+/* SITE HEADER */
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(10,21,48,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--borderk);}
+.site-header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 5vw;}
+.site-logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.02em;color:var(--white);}
+.site-logo .coin{color:var(--green);}
+.site-logo{align-items:baseline;}
+.site-logo .omega{font-size:22px;color:var(--green);}
+.site-nav{display:flex;align-items:center;gap:26px;}
+.site-nav a{font-size:13px;font-weight:500;color:var(--mist);text-decoration:none;letter-spacing:0.01em;transition:color 0.2s;white-space:nowrap;}
+.site-nav a:hover{color:var(--white);}
+.site-nav a.active{color:var(--green);}
+.site-nav-cta{background:var(--green);color:var(--navy3)!important;font-weight:700!important;padding:9px 18px;border-radius:2px;text-transform:uppercase;font-size:11px!important;letter-spacing:0.08em!important;}
+.site-nav-cta:hover{background:var(--green2);color:var(--navy3)!important;}
+.nav-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{width:22px;height:2px;background:var(--white);display:block;transition:0.2s;}
+@media(max-width:920px){
+  .site-nav{position:fixed;top:61px;left:0;right:0;bottom:0;background:var(--navy3);flex-direction:column;align-items:flex-start;padding:28px 24px;gap:4px;transform:translateX(100%);transition:transform 0.25s ease;overflow-y:auto;}
+  .site-nav.open{transform:translateX(0);}
+  .site-nav a{width:100%;padding:13px 0;border-bottom:1px solid var(--borderk);font-size:16px;}
+  .site-nav-cta{margin-top:14px;text-align:center;}
+  .nav-toggle{display:flex;}
+}
+</style>
+<style>
+.ef-stack{display:flex;flex-direction:column;gap:2px;}
+.ef{background:var(--navy2);display:grid;grid-template-columns:220px 1fr 1fr;border:1px solid var(--borderk);border-radius:2px;overflow:hidden;transition:border-color 0.2s;}
+.ef:hover{border-color:rgba(14,116,144,0.4);}
+.ef-l{background:linear-gradient(160deg,rgba(14,116,144,0.18),rgba(16,196,122,0.07));padding:36px 28px;border-right:1px solid var(--borderk);}
+.ef-badge{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal2);background:rgba(14,116,144,0.2);padding:4px 9px;border-radius:2px;margin-bottom:11px;}
+.ef-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:-0.01em;color:var(--white);line-height:1.05;margin-bottom:9px;}
+.ef-plain{font-size:13px;color:var(--mist);line-height:1.65;font-weight:300;}
+.ef-m{padding:36px 28px;border-right:1px solid var(--borderk);}
+.ef-r{padding:36px 28px;}
+.ef-sub{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate);margin-bottom:9px;}
+.ef-body{font-size:13px;color:var(--mist);line-height:1.7;font-weight:300;margin-bottom:13px;}
+.ef-ex{padding:11px 14px;background:rgba(255,255,255,0.03);border-left:2px solid rgba(16,196,122,0.25);}
+.ef-ex p{font-size:12px;font-style:italic;color:var(--slate);line-height:1.6;}
+.ef-sigs{display:flex;flex-direction:column;gap:6px;}
+.ef-sig{display:flex;gap:8px;align-items:flex-start;}
+.ef-dot{width:5px;height:5px;border-radius:50%;background:var(--green);margin-top:7px;flex-shrink:0;}
+.ef-sig-t{font-size:13px;color:var(--mist);line-height:1.55;}
+.pc-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);}
+.pc{background:var(--navy2);padding:32px 26px;}
+.pc-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:rgba(16,196,122,0.1);line-height:1;margin-bottom:9px;}
+.pc-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:0.03em;color:var(--white);margin-bottom:8px;}
+.pc-body{font-size:14px;color:var(--mist);line-height:1.7;font-weight:300;}
+@media(max-width:900px){.ef{grid-template-columns:1fr;}.ef-l,.ef-m{border-right:none;border-bottom:1px solid var(--borderk);}}
+@media(max-width:600px){.pc-row{grid-template-columns:1fr;}.ef-l,.ef-m,.ef-r{padding:26px 18px;}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Errored Coin", "url": "https://www.errored.co.in/", "description": "Errored Coin is a business and financial error advisory practice serving Indian MSMEs, founders, shop owners, and investors, offering diagnosis, stabilisation, recovery planning, and guided re-entry.", "email": "team@errored.co.in", "areaServed": "IN", "parentOrganization": {"@type": "Organization", "name": "Aadi Projects"}, "founder": {"@type": "Person", "name": "Komal Vijay"}, "sameAs": ["https://www.linkedin.com/company/erroredcoin/", "https://www.youtube.com/@erroredcoin", "https://www.instagram.com/erroredcoin", "https://x.com/erroredcoin", "https://www.facebook.com/erroredcoin"]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-logo"><span class="omega">&Omega;</span>&nbsp;ERRORED&nbsp;<span class="coin">COIN</span></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/error-types" class="active">Error Types</a>
+      <a href="/who-we-serve">Who We Serve</a>
+      <a href="/expert-panel">Expert Panel</a>
+      <a href="/capital">Capital & Restart</a>
+      <a href="/about">About</a>
+      <a href="/contact" class="site-nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<script>
+(function(){
+  var t=document.getElementById('navToggle'),n=document.getElementById('siteNav');
+  if(t&&n){t.addEventListener('click',function(){n.classList.toggle('open');});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});}
+})();
+</script>
+
+<div class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-inner">
+    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">The Error Framework</span></div>
+    <h1 class="page-title">Six Errors.<br><span class="accent">Every Business Has Made One.</span></h1>
+    <p class="page-sub">Naming the error correctly — before attempting recovery — is the most important thing you can do. Most recovery efforts fail because they treat the symptoms of one error type with the remedy for another.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">The Six Types</span></div>
+      <h2 class="section-title">Which Type of Error<br><span class="accent">Did You Make?</span></h2>
+    </div>
+    <div class="ef-stack">
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Cash Error</div><div class="ef-title">Money ran out before the business could breathe</div><div class="ef-plain">The business had a real idea but spent faster than it earned. Nobody tracked the cash. Revenue and profit were confused. Growth was prioritised over sustainability.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">A business launches with energy and early traction. Spending accelerates — on team, marketing, infrastructure — before the revenue model is proven. The account empties faster than expected. Short-term loans fill the gap. The gap grows. By the time the situation is visible, the options are significantly narrower than they were six months earlier. Most cash errors are slow and invisible until they are not.</div><div class="ef-ex"><p>"We were doing ₹4 lakh a month in revenue. We were spending ₹6 lakh. We didn't notice for five months."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Vendor payments delayed more than 30 days consistently</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Monthly revenue known, monthly expenditure not precisely known</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Using one loan to service another</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Salary delays becoming routine</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Bank balance checked daily with anxiety rather than curiosity</div></div></div></div></div>
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Market Error</div><div class="ef-title">Built or sold something the customer didn't want</div><div class="ef-plain">The product was never validated against real willingness to pay. Or the market shifted and the model was not updated. Built on belief rather than signal.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">The founder falls in love with the idea before testing whether a customer will actually pay. Early conversations with friends are mistaken for market validation. The business launches and faces silence — not outright rejection, just quiet absence. Or the business was working for years and the market shifted around it. The market said no — but nobody heard it clearly enough, early enough.</div><div class="ef-ex"><p>"We had 200 people say they would use it. When we launched, 12 actually paid. We still don't know which assumption was wrong."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">High interest in demos or conversations, low conversion to payment</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Customers ask for discounts before using the product</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Revenue consistently below plan with no clear explanation</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Long sales cycles with no pattern of what closes</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Existing business declining with no single event to explain it</div></div></div></div></div>
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Trust Error</div><div class="ef-title">The wrong person was given trust they had not earned</div><div class="ef-plain">A business partner, employee, financial advisor, or vendor was trusted before that trust was verified. The most common and most painful error in Indian business.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">A relationship is extended into a business arrangement without the formal structures that would have protected both parties. A co-founder takes decisions without transparency. An employee with access uses it. A financial advisor places funds in products that suit their commission. A vendor takes an advance and delivers partially. Common in India because business relationships are frequently built on personal trust rather than documented agreements.</div><div class="ef-ex"><p>"My business partner of 7 years took ₹34 lakh out of our joint account. There was no formal partnership agreement. I have very little legal recourse."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Key business relationships operating without written agreements</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Single person with unchecked access to accounts or decisions</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Financial advice from someone who earns commission on what they recommend</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Advance payments to vendors without milestone-linked documentation</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Discomfort asking questions because of the personal relationship</div></div></div></div></div>
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Timing Error</div><div class="ef-title">Right idea, right product — wrong moment</div><div class="ef-plain">The decision itself was not wrong. The timing was. Entered a market at its peak. Sold too early. Expanded at exactly the wrong point in the economic cycle.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">Timing errors are the hardest to diagnose because every good decision made at the wrong time looks like a bad decision in hindsight. A property bought at a peak, delivery delayed four years, in a market that did not recover as expected. An expansion begun just before a demand contraction. Was the strategy wrong or was the moment wrong? Timing errors require the most careful diagnosis — the wrong conclusion leads to the wrong remedy.</div><div class="ef-ex"><p>"We expanded to three new cities in early 2022. By mid-2022, our core market contracted. The expansion drained the reserves we needed to survive the contraction."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Holding an asset that has moved against you for more than 12 months</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Expansion into a market that showed stress signals before entry</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Investment made at the peak of media attention on a sector</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Business model that worked in one environment failing in another</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Reluctance to exit because of sunk cost rather than future value</div></div></div></div></div>
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Paperwork Error</div><div class="ef-title">A document became a serious problem</div><div class="ef-plain">A missed GST filing, a contract signed without reading, a deal closed without documentation, or personal liability accepted without understanding the exposure.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">Most paperwork errors begin with the assumption that a detail does not matter. The moment when this assumption fails comes months or years later: a dispute with nothing to stand on, a tax authority finding an inconsistency, a lender enforcing a personal guarantee the borrower did not realise they had signed. These errors disproportionately affect first-generation business owners who relied on informal advisors or did not read the fine print.</div><div class="ef-ex"><p>"I signed a personal guarantee as part of a business loan in 2020. The business closed in 2022. I am now personally liable for ₹28 lakh I did not know I owed."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Business agreements operating on handshakes or WhatsApp messages</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">CA or lawyer not consulted before signing significant documents</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">GST or income tax filings delayed or incomplete for more than a year</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Notices from tax authorities going unread or unresponded to</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Business and personal finances intermingled without clear separation</div></div></div></div></div>
+      <div class="ef"><div class="ef-l"><div class="ef-badge">Panic Error</div><div class="ef-title">A decision made under stress that made things worse</div><div class="ef-plain">Sold at the bottom. Closed a business that could have survived. Took a high-interest loan to repay an older one. Agreed to bad terms under pressure. Biology, not weakness.</div></div><div class="ef-m"><div class="ef-sub">How it typically unfolds</div><div class="ef-body">A stressful event — a market fall, a key customer leaving, a family emergency, a creditor calling — triggers a decision that feels urgent but is driven by the need to reduce anxiety rather than improve the situation. The decision is made faster than the situation requires, with less information than is available. Panic errors are fully understandable — anyone in the same situation would have made the same decision. Understanding why it happened is what makes recovery possible.</div><div class="ef-ex"><p>"The market fell 18% in three weeks. I sold everything. It recovered 22% in the next four months. I locked in a loss and missed the recovery."</p></div></div><div class="ef-r"><div class="ef-sub">Warning signals</div><div class="ef-sigs"><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Major financial decisions made within 48 hours of bad news</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Decisions made to stop anxiety rather than improve the situation</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Pressure from a third party driving the timeline</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Pattern of selling when markets fall and buying when they rise</div></div><div class="ef-sig"><div class="ef-dot"></div><div class="ef-sig-t">Regret immediately after the decision before outcomes are visible</div></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">The Principle</span></div><h2 class="section-title">Why Naming the Error<br><span class="accent">Changes Everything.</span></h2></div>
+    <div class="pc-row">
+      <div class="pc"><div class="pc-num">01</div><div class="pc-title">Most errors are layered</div><div class="pc-body">Most situations involve more than one error type. A cash error is often preceded by a market error. A trust error frequently compounds into a cash error. The value of the framework is to identify the primary error that, if corrected, changes the trajectory of all the others.</div></div>
+      <div class="pc"><div class="pc-num">02</div><div class="pc-title">The error is not the failure</div><div class="pc-body">In systems thinking, an error message is the most useful output a system can produce. It tells you precisely what broke and where. A business error carries the same information. The only error that leads to permanent failure is the one that is never read correctly.</div></div>
+      <div class="pc"><div class="pc-num">03</div><div class="pc-title">Shame delays diagnosis</div><div class="pc-body">The biggest obstacle to recovery is not the error itself — it is the shame attached to having made it. The moment the error is named clearly and without judgment, the shame diminishes and the thinking gets sharper.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="cta-strip">
+      <h2 class="cta-strip-title">Recognise an Error Type?</h2>
+      <p class="cta-strip-sub">The diagnosis begins with a conversation. Write to us and we will take it from there — no forms, no process.</p>
+      <a href="/contact" class="btn-primary">Start a Conversation &nbsp;→</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name"><span class="fb-omega">&Omega;</span> ERRORED <span>COIN</span></div>
+      <div class="footer-brand-sub">Truth &middot; Recovery &middot; Progress &nbsp;|&nbsp; An initiative by Aadi Projects &middot; Pune, India &middot; 2026</div>
+      <div class="footer-email-label">Write to us</div>
+      <a href="mailto:team@errored.co.in" class="footer-email-link">team@errored.co.in</a>
+    </div>
+    <div>
+      <div class="footer-nav-grid">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/error-types">Error Types</a>
+        <a href="/who-we-serve">Who We Serve</a>
+        <a href="/expert-panel">Expert Panel</a>
+        <a href="/capital">Capital &amp; Restart</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-social-title">Follow</div>
+      <div class="footer-nav-grid footer-social-grid">
+        <a href="https://www.linkedin.com/company/erroredcoin/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com/@erroredcoin" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/erroredcoin" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/erroredcoin" target="_blank" rel="noopener">X</a>
+        <a href="https://www.facebook.com/erroredcoin" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-copy">&copy; 2026 Errored Coin &middot; An initiative by Aadi Projects &middot; Pune, India</span>
+    <span class="footer-tag">errored.co.in</span>
+  </div>
+</footer>
+<script>const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)';}}),{threshold:0.04});document.querySelectorAll('.ef,.pc').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(12px)';el.style.transition='opacity 0.45s ease,transform 0.45s ease';obs.observe(el);});</script>
+</body></html>

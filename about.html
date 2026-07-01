@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About — Errored Coin</title>
+<meta name="description" content="Errored Coin is an initiative by Aadi Projects, founded by Komal Vijay. The philosophy: business and financial errors are signals to be read, not failures to hide.">
+<link rel="canonical" href="https://www.errored.co.in/about">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About — Errored Coin">
+<meta property="og:description" content="Errored Coin is an initiative by Aadi Projects, founded by Komal Vijay. The philosophy: business and financial errors are signals to be read, not failures to hide.">
+<meta property="og:url" content="https://www.errored.co.in/about">
+<meta property="og:image" content="https://www.errored.co.in/og-image.png">
+<meta property="og:site_name" content="Errored Coin">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — Errored Coin">
+<meta name="twitter:description" content="Errored Coin is an initiative by Aadi Projects, founded by Komal Vijay. The philosophy: business and financial errors are signals to be read, not failures to hide.">
+<meta name="twitter:image" content="https://www.errored.co.in/og-image.png">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Errored Coin — an initiative by Aadi Projects">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D1B3E;--navy2:#132247;--navy3:#0A1530;--teal:#0E7490;--teal2:#0D9B85;--green:#10C47A;--green2:#2DD4A0;--white:#FFFFFF;--mist:#C8DDE8;--slate:#6B8BA4;--mid:#4A6B80;--border:rgba(14,116,144,0.18);--borderk:rgba(255,255,255,0.08);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:16px;}
+body{font-family:'Barlow',sans-serif;background:var(--navy);color:var(--white);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+/* PAGE HERO - tight padding, no vh units */
+.page-hero{padding:56px 5vw 44px;background:var(--navy3);border-bottom:1px solid var(--borderk);position:relative;overflow:hidden;}
+.page-hero-dots{position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(rgba(16,196,122,0.1) 1px,transparent 1px);background-size:36px 36px;pointer-events:none;}
+.page-hero-inner{max-width:1100px;margin:0 auto;position:relative;}
+/* EYEBROW */
+.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.eyebrow-line{width:24px;height:1.5px;background:var(--green);}
+.eyebrow-text{color:var(--green);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;}
+/* PAGE TITLE - fixed px, no vw/clamp */
+.page-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:72px;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.92;color:var(--white);margin-bottom:20px;}
+.page-title .accent{background:linear-gradient(90deg,var(--teal),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.page-sub{font-size:17px;font-weight:300;color:var(--mist);max-width:580px;line-height:1.7;}
+/* SECTIONS - tight padding */
+.section{padding:52px 5vw;}
+.section-inner{max-width:1100px;margin:0 auto;}
+.section-alt{background:rgba(255,255,255,0.025);}
+.section-header{margin-bottom:40px;}
+/* SECTION TITLE - fixed px */
+.section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:52px;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.96;color:var(--white);margin-bottom:14px;}
+.section-title .accent{color:var(--green);}
+.section-body{font-size:15px;font-weight:300;color:var(--mist);max-width:580px;line-height:1.75;}
+.rule{height:1px;background:var(--border);margin:0 5vw;}
+/* BUTTONS */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--navy);background:var(--green);padding:13px 28px;border-radius:3px;transition:background 0.2s;}
+.btn-primary:hover{background:var(--green2);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--mist);border:1px solid rgba(200,221,232,0.3);padding:12px 26px;border-radius:3px;transition:border-color 0.2s,color 0.2s;}
+.btn-ghost:hover{border-color:var(--mist);color:var(--white);}
+/* CTA STRIP - tighter */
+.cta-strip{background:linear-gradient(135deg,rgba(14,116,144,0.15),rgba(16,196,122,0.08));border:1px solid var(--border);border-radius:2px;padding:44px 40px;text-align:center;}
+.cta-strip-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:44px;text-transform:uppercase;letter-spacing:-0.02em;color:var(--white);margin-bottom:12px;}
+.cta-strip-sub{font-size:15px;font-weight:300;color:var(--mist);margin-bottom:28px;max-width:440px;margin-left:auto;margin-right:auto;}
+/* FOOTER - compact */
+footer{border-top:1px solid var(--borderk);padding:36px 5vw 24px;}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:28px;}
+.footer-brand-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase;letter-spacing:0.02em;color:var(--white);margin-bottom:5px;}
+.footer-brand-name span{color:var(--green);}
+.fb-omega{color:var(--green);}
+.footer-brand-sub{font-size:12px;color:var(--slate);line-height:1.5;margin-bottom:12px;}
+.footer-email-label{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate);margin-bottom:4px;}
+.footer-email-link{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:17px;color:var(--green);text-decoration:none;letter-spacing:0.02em;}
+.footer-email-link:hover{color:var(--green2);}
+.footer-nav-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px 28px;}
+.footer-nav-grid a{font-size:13px;color:var(--slate);text-decoration:none;transition:color 0.2s;padding:2px 0;}
+.footer-nav-grid a:hover{color:var(--white);}
+.footer-bottom{border-top:1px solid var(--borderk);padding-top:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.footer-bottom-copy{font-size:12px;color:var(--mid);}
+.footer-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--navy);background:var(--green);padding:3px 8px;border-radius:2px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+@media(max-width:700px){.page-title{font-size:52px;}.section-title{font-size:40px;}.cta-strip{padding:32px 22px;}.footer-top{grid-template-columns:1fr;gap:24px;}}
+
+
+.footer-top{grid-template-columns:1fr 1fr 1fr;}
+.footer-social-title{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate);margin-bottom:8px;}
+.footer-social-grid{grid-template-columns:1fr;}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;}}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr;}}
+/* SITE HEADER */
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(10,21,48,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--borderk);}
+.site-header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 5vw;}
+.site-logo{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.02em;color:var(--white);}
+.site-logo .coin{color:var(--green);}
+.site-logo{align-items:baseline;}
+.site-logo .omega{font-size:22px;color:var(--green);}
+.site-nav{display:flex;align-items:center;gap:26px;}
+.site-nav a{font-size:13px;font-weight:500;color:var(--mist);text-decoration:none;letter-spacing:0.01em;transition:color 0.2s;white-space:nowrap;}
+.site-nav a:hover{color:var(--white);}
+.site-nav a.active{color:var(--green);}
+.site-nav-cta{background:var(--green);color:var(--navy3)!important;font-weight:700!important;padding:9px 18px;border-radius:2px;text-transform:uppercase;font-size:11px!important;letter-spacing:0.08em!important;}
+.site-nav-cta:hover{background:var(--green2);color:var(--navy3)!important;}
+.nav-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-toggle span{width:22px;height:2px;background:var(--white);display:block;transition:0.2s;}
+@media(max-width:920px){
+  .site-nav{position:fixed;top:61px;left:0;right:0;bottom:0;background:var(--navy3);flex-direction:column;align-items:flex-start;padding:28px 24px;gap:4px;transform:translateX(100%);transition:transform 0.25s ease;overflow-y:auto;}
+  .site-nav.open{transform:translateX(0);}
+  .site-nav a{width:100%;padding:13px 0;border-bottom:1px solid var(--borderk);font-size:16px;}
+  .site-nav-cta{margin-top:14px;text-align:center;}
+  .nav-toggle{display:flex;}
+}
+</style>
+<style>
+.gap-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);}
+.gap-cell{background:var(--navy2);padding:28px 20px;text-align:center;}
+.gap-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;line-height:1;margin-bottom:5px;background:linear-gradient(90deg,var(--teal),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.gap-label{font-size:13px;color:var(--slate);line-height:1.4;}
+.gap-note{margin-top:2px;background:var(--navy2);border:1px solid var(--borderk);border-radius:2px;padding:32px 40px;}
+.phil{background:rgba(14,116,144,0.06);border:1px solid var(--border);border-radius:2px;padding:48px 56px;position:relative;overflow:hidden;}
+.phil::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--green),var(--teal2));}
+.phil-q{font-family:'Barlow',sans-serif;font-weight:300;font-style:italic;font-size:22px;color:var(--white);line-height:1.55;margin-bottom:16px;max-width:720px;}
+.phil-s{font-size:12px;color:var(--slate);}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);}
+.ac{background:var(--navy2);padding:36px 32px;}
+.ac-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal2);margin-bottom:10px;}
+.ac-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:-0.01em;color:var(--white);margin-bottom:12px;line-height:1.05;}
+.ac-body{font-size:14px;color:var(--mist);line-height:1.75;font-weight:300;}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);}
+.vc{background:var(--navy2);padding:30px 24px;}
+.vc-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:rgba(16,196,122,0.1);line-height:1;margin-bottom:9px;}
+.vc-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;text-transform:uppercase;letter-spacing:0.03em;color:var(--white);margin-bottom:7px;}
+.vc-body{font-size:13px;color:var(--mist);line-height:1.7;font-weight:300;}
+.aadi-strip{background:var(--navy2);border:1px solid var(--borderk);border-radius:2px;padding:36px 40px;display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start;}
+.aadi-label{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--slate);margin-bottom:6px;}
+.aadi-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase;letter-spacing:-0.01em;color:rgba(255,255,255,0.5);margin-bottom:4px;}
+.aadi-sub{font-size:12px;color:var(--mid);line-height:1.5;}
+.aadi-body{font-size:14px;color:var(--mist);line-height:1.75;font-weight:300;}
+.aadi-note{margin-top:16px;padding:14px 18px;background:rgba(255,255,255,0.03);border-left:2px solid rgba(16,196,122,0.2);}
+.aadi-note p{font-size:13px;color:var(--slate);font-style:italic;line-height:1.6;}
+@media(max-width:800px){.gap-row{grid-template-columns:1fr 1fr;}.ag{grid-template-columns:1fr;}.vg{grid-template-columns:1fr 1fr;}.aadi-strip{grid-template-columns:1fr;padding:28px 22px;}.phil{padding:32px 24px;}.gap-note{padding:24px 22px;}}
+@media(max-width:500px){.vg{grid-template-columns:1fr;}.ac,.vc{padding:26px 18px;}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Errored Coin", "url": "https://www.errored.co.in/", "description": "Errored Coin is a business and financial error advisory practice serving Indian MSMEs, founders, shop owners, and investors, offering diagnosis, stabilisation, recovery planning, and guided re-entry.", "email": "team@errored.co.in", "areaServed": "IN", "parentOrganization": {"@type": "Organization", "name": "Aadi Projects"}, "founder": {"@type": "Person", "name": "Komal Vijay"}, "sameAs": ["https://www.linkedin.com/company/erroredcoin/", "https://www.youtube.com/@erroredcoin", "https://www.instagram.com/erroredcoin", "https://x.com/erroredcoin", "https://www.facebook.com/erroredcoin"]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-logo"><span class="omega">&Omega;</span>&nbsp;ERRORED&nbsp;<span class="coin">COIN</span></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/error-types">Error Types</a>
+      <a href="/who-we-serve">Who We Serve</a>
+      <a href="/expert-panel">Expert Panel</a>
+      <a href="/capital">Capital & Restart</a>
+      <a href="/about" class="active">About</a>
+      <a href="/contact" class="site-nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<script>
+(function(){
+  var t=document.getElementById('navToggle'),n=document.getElementById('siteNav');
+  if(t&&n){t.addEventListener('click',function(){n.classList.toggle('open');});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});}
+})();
+</script>
+
+<div class="page-hero">
+  <div class="page-hero-dots"></div>
+  <div class="page-hero-inner">
+    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">About Errored Coin</span></div>
+    <h1 class="page-title">Why This<br><span class="accent">Exists.</span></h1>
+    <p class="page-sub">The Indian advisory ecosystem has been built entirely for the upward journey. Errored Coin was built for the moment no one else serves — when something has gone seriously wrong and the person in it needs clarity, not comfort.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">The Gap We Found</span></div><h2 class="section-title">A Problem at<br><span class="accent">Every Scale.</span></h2></div>
+    <div class="gap-row">
+      <div class="gap-cell"><div class="gap-num">35,567</div><div class="gap-label">MSMEs closed in FY 2024–25 — almost double the previous year</div></div>
+      <div class="gap-cell"><div class="gap-num">93%</div><div class="gap-label">of F&amp;O retail traders in India lose money — SEBI data, 2024</div></div>
+      <div class="gap-cell"><div class="gap-num">2 Lakh</div><div class="gap-label">grocery and neighbourhood stores closed in one year under pressure from quick commerce</div></div>
+      <div class="gap-cell"><div class="gap-num">0</div><div class="gap-label">dedicated platforms built for any of these people after the loss</div></div>
+    </div>
+    <div class="gap-note">
+      <p style="font-size:15px;font-weight:300;color:var(--mist);line-height:1.8;max-width:760px;">Behind each of these numbers is a person with questions that nobody in the Indian financial and advisory system is designed to answer. Not the bank — which wants collateral before it helps. Not the CA — who does compliance but not recovery. Not the consultant — whose fees are built for large organisations. Not the finfluencer — who has a course to sell. Errored Coin was built because this gap is not a niche. It is the mainstream experience of the Indian economy at the moments when it matters most.</p>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">The Founding Philosophy</span></div><h2 class="section-title">An Error Is Not<br><span class="accent">the End of the Story.</span></h2></div>
+    <div class="phil">
+      <p class="phil-q">"In any system — a machine, a codebase, a supply chain, a business — an error message is the most useful output that system can produce. It tells you precisely what broke and where. The error is not the failure. It is the signal that makes recovery possible. The only error that leads to permanent failure is the one that is never read correctly. Every other error is recoverable — with the right diagnosis, at the right time, by people honest enough to say what they see."</p>
+      <div class="phil-s">— Founding philosophy &nbsp;·&nbsp; Errored Coin &nbsp;·&nbsp; Pune, India &nbsp;·&nbsp; 2026</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">How We Work</span></div><h2 class="section-title">The Four Things We<br><span class="accent">Never Compromise On.</span></h2></div>
+    <div class="ag">
+      <div class="ac"><div class="ac-tag">Honesty over comfort</div><div class="ac-title">We say what we see, not what is easy to hear</div><div class="ac-body">The advisory relationship is only worth having if the advice is honest. Every situation we engage with produces a written diagnosis that reflects our genuine assessment — including the parts that are difficult to say. We do not soften findings to protect the relationship. We do not overstate recovery prospects to secure a further engagement. What we see is what we say.</div></div>
+      <div class="ac"><div class="ac-tag">No product to sell</div><div class="ac-title">Our only obligation is an accurate diagnosis</div><div class="ac-body">Every advisory relationship carries the structural risk that the advice reflects what the advisor has to sell. We carry no financial product, no fund to place capital into, no commission structure from any recommendation. Our engagement fee is fixed and agreed before the work begins. What you receive is analysis — not a sales process wearing the clothes of analysis.</div></div>
+      <div class="ac"><div class="ac-tag">Practitioner judgment</div><div class="ac-title">Every panel member has operated in what they advise on</div><div class="ac-body">The people who advise on business recovery must have seen it from inside a business — not from a case study but from real operational experience with real stakes. The panel members who advise on financial errors have managed money professionally. Those who advise on legal situations have navigated them.</div></div>
+      <div class="ac"><div class="ac-tag">No judgment</div><div class="ac-title">The error is the starting point, not the verdict</div><div class="ac-body">The single biggest barrier to recovery is the shame attached to having made a serious mistake. Shame drives concealment, impulsive action, and delay — all of which make recovery harder. The panel's engagement begins from the position that the error was made by a person operating with the information and emotional state they had at that moment. Understanding the error is not the same as judging the person who made it.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">Our Foundation</span></div><h2 class="section-title">The Advisory Background<br><span class="accent">Behind This Work.</span></h2></div>
+    <div class="aadi-strip">
+      <div>
+        <div class="aadi-label">An initiative by</div>
+        <div class="aadi-name">Aadi Projects</div>
+        <div class="aadi-sub">Management Consulting &amp; Capital Advisory<br>Pune, India &nbsp;·&nbsp; Est. 2015</div>
+      </div>
+      <div>
+        <div class="aadi-body">Errored Coin was built by the principals of Aadi Projects — a boutique management consulting and capital advisory practice established in Pune in 2015. Over a decade of working with businesses across sectors and stages, a consistent pattern became clear: the advisory system in India is built entirely for the upward journey. The client arriving at their worst moment — navigating a serious error, sitting with a loss, trying to understand what went wrong — has almost nowhere honest to turn.</div>
+        <div class="aadi-note"><p>Errored Coin and Aadi Projects serve different people entering from different doors. They feed each other naturally: someone who recovers through Errored Coin becomes ready for growth advisory, and a consulting engagement sometimes surfaces a situation that calls for an honest recovery diagnosis first.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">Values in Practice</span></div><h2 class="section-title">Three Commitments in<br><span class="accent">Every Engagement.</span></h2></div>
+    <div class="vg">
+      <div class="vc"><div class="vc-num">01</div><div class="vc-title">Clarity before action</div><div class="vc-body">We will not recommend a course of action until the diagnosis is complete. Most recovery efforts fail not because of lack of effort but because they begin from an incorrect diagnosis. The discipline to understand clearly first is what makes the action effective.</div></div>
+      <div class="vc"><div class="vc-num">02</div><div class="vc-title">Honest about limits</div><div class="vc-body">We are transparent about what is outside our capability or mandate. If a situation requires a specialist we do not have, we say so. If our honest assessment is that the options are more limited than the client hopes, we say that too. Honesty about limits is part of honesty about the situation.</div></div>
+      <div class="vc"><div class="vc-num">03</div><div class="vc-title">The client's decision</div><div class="vc-body">We provide diagnosis, analysis, and a roadmap. We do not make decisions for our clients. Every engagement ends with the client in possession of a clear picture and a recommended next step — and the full freedom to decide whether to take it, modify it, or reject it entirely.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="cta-strip">
+      <h2 class="cta-strip-title">One Email. No Forms. No Process.</h2>
+      <p class="cta-strip-sub">Write to team@errored.co.in and describe your situation briefly. We will respond directly.</p>
+      <a href="/contact" class="btn-primary">Start a Conversation &nbsp;→</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name"><span class="fb-omega">&Omega;</span> ERRORED <span>COIN</span></div>
+      <div class="footer-brand-sub">Truth &middot; Recovery &middot; Progress &nbsp;|&nbsp; An initiative by Aadi Projects &middot; Pune, India &middot; 2026</div>
+      <div class="footer-email-label">Write to us</div>
+      <a href="mailto:team@errored.co.in" class="footer-email-link">team@errored.co.in</a>
+    </div>
+    <div>
+      <div class="footer-nav-grid">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/error-types">Error Types</a>
+        <a href="/who-we-serve">Who We Serve</a>
+        <a href="/expert-panel">Expert Panel</a>
+        <a href="/capital">Capital &amp; Restart</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-social-title">Follow</div>
+      <div class="footer-nav-grid footer-social-grid">
+        <a href="https://www.linkedin.com/company/erroredcoin/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com/@erroredcoin" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/erroredcoin" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/erroredcoin" target="_blank" rel="noopener">X</a>
+        <a href="https://www.facebook.com/erroredcoin" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-bottom-copy">&copy; 2026 Errored Coin &middot; An initiative by Aadi Projects &middot; Pune, India</span>
+    <span class="footer-tag">errored.co.in</span>
+  </div>
+</footer>
+<script>const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.style.transform='translateY(0)';}}),{threshold:0.06});document.querySelectorAll('.ac,.vc,.gap-cell').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(12px)';el.style.transition='opacity 0.45s ease,transform 0.45s ease';obs.observe(el);});</script>
+</body></html>

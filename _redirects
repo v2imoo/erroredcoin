@@ -1,0 +1,10 @@
+# Clean URLs - serve extensionless paths
+/home              /                    301
+/index.html        /                    301
+/about.html        /about               301
+/services.html     /services            301
+/error-types.html  /error-types         301
+/who-we-serve.html /who-we-serve        301
+/expert-panel.html /expert-panel        301
+/capital.html      /capital             301
+/contact.html      /contact             301
